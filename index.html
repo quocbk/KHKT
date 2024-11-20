@@ -18,6 +18,142 @@
     	.bl {display: block;}
     </style>
     <link rel="stylesheet" href="table-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Responsive -->
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        .navbar-item {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #000;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+        .navbar-search {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            padding: 5px;
+            font-size: 1rem;
+        }
+        .search-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero-image {
+            background: url('your-hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+        .hero-content p {
+            margin: 20px 0;
+        }
+        .hero-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Responsive Grid for Fun Facts */
+        .fun-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .fact {
+            background: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        footer .col {
+            flex: 1;
+            min-width: 200px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin-bottom: 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer .social-icons i {
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar-item {
+                display: block;
+                margin: 5px 0;
+            }
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            .hero-button {
+                padding: 8px 16px;
+            }
+            .fun-facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.2rem;
+            }
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 
 </head>
 <body>
