@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Chuyện xưa Đà Thành</title>
+    <link rel="stylesheet" href="langstyling_lntt.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     	.region {padding: 20px; border-style: solid;}
@@ -18,7 +20,6 @@
     	.bl {display: block;}
     </style>
     <link rel="stylesheet" href="table-style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -36,6 +37,10 @@
                 <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
             </button>
         </form>
+
+        <div id="Menu" class="menu">
+        	<i class="menu-icon ti-menu"></i>
+        </div>
 
         <div class="lang-menu">
             <div class="selected-lang">
@@ -223,6 +228,33 @@ function changeLanguage(lang) {
 }
 
     </script>
+
+    <!--Nút ti-menu ở phía trên bên trái (dòng 41 - 43)-->
+    <script>
+    	var header = document.getElementById('header');
+    	var Home = document.getElementById('Menu');
+    	var headerHeight = header.clientHeight;
+    	// Dong/ mo menu
+    	Home.onclick = function() {
+    		var isClose = header.clientHeight === headerHeight;
+    		if (isClose) {
+    			header.style.height = 'auto';
+    		} else {
+    			header.style.height = null;
+    		}
+    	}
+
+    	// Tu dong dong khi chon menu
+    	var menuItems = document.querySelectorAll('navbar[href*=".html"]');
+    	for (var i = 0; i < menuItems.length; i++) {
+    		var menuItem = menuItems[i];
+
+    		menuItem.onclick = function() {
+    			header.style.height = null;
+    		}
+    	}
+    </script>
+
 </body>
 
 </html>
