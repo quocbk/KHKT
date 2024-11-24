@@ -65,7 +65,7 @@
 	    background: var(--gradient-main);
 	    flex-wrap: nowrap;
 	    flex-direction: column;
-            overflow: hidden;
+        overflow: hidden;
 	}
 
 }
@@ -135,12 +135,12 @@
 	    position: sticky;
 	    top: 0;
 	    z-index: 10;
-	    /*height: 75px;*/
+	    height: 75px;
 	    display: flex;
 	    background: var(--gradient-main);
 	    flex-wrap: nowrap;
 	    flex-direction: column;
-            overflow: hidden;
+        overflow: hidden;
 	}
 
 }
