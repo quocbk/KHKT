@@ -65,8 +65,6 @@
 	    display: flex;
 	    background: var(--gradient-main);
 	    flex-wrap: nowrap;
-	    flex-direction: column;
-        overflow: hidden;
 	}
 
 }
