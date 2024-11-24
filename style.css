@@ -118,7 +118,7 @@ section.hero-image {
     display: block;
 }
 
-
+/*  */
 .navbar-search {
     display: flex;
     align-items: center;
@@ -161,6 +161,23 @@ section.hero-image {
     opacity: 0.8;
     background-color: rgba(0, 0, 0, 0.2);
     transform: scale(1.05); /* Optional: Add scale on hover */
+}
+
+/* Menu */
+.menu {
+    float: right;
+    padding: 0 21 px;
+}
+.menu: hover {
+    background-color: #ccc;
+}
+.menu: hover .menu-icon{
+    color: #000;
+}
+.menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
 }
 
 /* language */
