@@ -192,13 +192,13 @@
     }
 
     /* Home */
-    .navbar {
-        flex-direction: column;
-	    position: sticky;
-	    top: 0;
-	    z-index: 10;
-	    height: 75px;
-	    display: flex;
+        .navbar {
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        height: 75px;
+        display: flex;
 	    background: var(--gradient-main);
 	    flex-wrap: nowrap;
 	    /*
