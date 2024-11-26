@@ -10,32 +10,164 @@ const mockResults = [
     { 
         title: "Chiếu Cẩm Nê", 
         link: "chieucamne.html", 
-        snippet: "Learn about the traditional mat weaving craft of Chiếu Cẩm Nê.", 
-        image: "chieucamne.jpg" 
+        snippet: "Tìm hiểu về nghề dệt chiếu truyền thống của Chiếu Cẩm Nê.", 
+        image: "chieucamne.jfif" 
     },
     { 
         title: "Đá Mỹ Nghệ Non Nước", 
         link: "damynghenonnuoc.html", 
-        snippet: "Explore the stone carving techniques in Non Nước.", 
+        snippet: "Khám phá kỹ thuật chạm khắc đá ở Non Nước.", 
         image: "damynghe.jpg" 
     },
     { 
         title: "Nước Mắm Nam Ô", 
         link: "nuocmamnamo.html", 
-        snippet: "Discover the traditional fish sauce production in Nam Ô.", 
-        image: "nuocmam.jpg" 
+        snippet: "Khám phá nghề làm nước mắm truyền thống ở Nam Ô.", 
+        image: "nuocmamnamo.png" 
     },
     { 
         title: "Bánh Tráng Túy Loan", 
         link: "banhtrangtuyloan.html", 
-        snippet: "Taste the famous rice paper from Tuy Loan.", 
-        image: "banhtrang.jpg" 
+        snippet: "Thưởng thức món bánh tráng trứ danh của Túy Loan.", 
+        image: "banhtrangtuyloan.jpg" 
     },
     { 
         title: "Bánh Khô Mè", 
         link: "banhkhome.html", 
-        snippet: "Enjoy the delicious Dried Sesame Cake from Da Nang.", 
-        image: "banhkho.jpg" 
+        snippet: "Thưởng thức bánh mè khô Đà Nẵng thơm ngon.", 
+        image: "banhkhome.jpeg" 
+    },
+    { 
+        title: "Phan Châu Trinh", 
+        link: "pct.html", 
+        snippet: "", 
+        image: "pct.jpg" 
+    },
+    { 
+        title: "Huỳnh Thúc Kháng", 
+        link: "htk.html", 
+        snippet: "", 
+        image: "htk.png" 
+    },
+    { 
+        title: "Trần Quý Cáp", 
+        link: "tqc.html", 
+        snippet: "", 
+        image: "tqc.jpg" 
+    },
+    { 
+        title: "Trần Cao Vân", 
+        link: "tcv.html", 
+        snippet: "", 
+        image: "tcv.jpg" 
+    },
+    { 
+        title: "Thái Phiên", 
+        link: "tp.html", 
+        snippet: "", 
+        image: "tp.jpg" 
+    },
+    { 
+        title: "Nguyễn Duy Hiệu", 
+        link: "ndh.html", 
+        snippet: "", 
+        image: "ndh.jpg" 
+    },
+    { 
+        title: "Nguyễn Tri Phương", 
+        link: "ntp.html", 
+        snippet: "", 
+        image: "ntp.jpg" 
+    },
+    { 
+        title: "Nguyễn Bá Thanh", 
+        link: "nbt.html", 
+        snippet: "", 
+        image: "nbt.jpg" 
+    },
+    { 
+        title: "Bảo tàng Đồng Đình", 
+        link: "dongdinh.html", 
+        snippet: "", 
+        image: "dongdinh.jpg" 
+    },
+    { 
+        title: "Bảo tàng Hồ Chí Minh-chi nhánh Quân khu 5.", 
+        link: "hcmqk5.html", 
+        snippet: "", 
+        image: "hcmqk5.jfif" 
+    },
+    { 
+        title: "Nhà Trưng bày Hoàng Sa", 
+        link: "ntbhs.html", 
+        snippet: "", 
+        image: "nhatrungbayHS1.jpg" 
+    },
+    { 
+        title: "Bảo tàng Đà Nẵng", 
+        link: "btdn.html", 
+        snippet: "", 
+        image: "btdn.jpg" 
+    },
+    { 
+        title: "Bảo tàng Điêu khắc Chăm Đà Nẵng", 
+        link: "btdkcdn.html", 
+        snippet: "", 
+        image: "btdkcdn.jpg" 
+    },
+    { 
+        title: "Lễ hội Cầu ngư", 
+        link: "caungu.html", 
+        snippet: "", 
+        image: "caungu.jpg" 
+    },
+    { 
+        title: "Lễ ăn thề kết nghĩa (người c'tu)", 
+        link: "atkn.html", 
+        snippet: "", 
+        image: "atkn.jpg" 
+    },
+    { 
+        title: "Lễ hội Đình làng Thạc Gián", 
+        link: "dltg.html", 
+        snippet: "", 
+        image: "dltg.jpg" 
+    },
+    { 
+        title: "Lễ hội Đình làng Túy Loan", 
+        link: "dltl.html", 
+        snippet: "", 
+        image: "dltl.jpg" 
+    },
+    { 
+        title: "Lễ hội Quán Thế Âm", 
+        link: "qta.html", 
+        snippet: "", 
+        image: "qta.jpg" 
+    },
+    { 
+        title: "Lễ hội rước mục đồng", 
+        link: "rmd.html", 
+        snippet: "", 
+        image: "rmd.jpg" 
+    },
+    { 
+        title: "Lễ hội đua thuyền", 
+        link: "duathuyen.html", 
+        snippet: "", 
+        image: "duathuyen.jpg" 
+    },
+    { 
+        title: "Lễ hội làng An Hải", 
+        link: "langanhai.html", 
+        snippet: "", 
+        image: "langanhai.jpg" 
+    },
+    { 
+        title: "Lễ hội làng Hòa Mỹ", 
+        link: "langhoamy.html", 
+        snippet: "", 
+        image: "langhoamy.jpg" 
     }
 ];
 
