@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Search Results</title>
-    <link rel="stylesheet" href="searchstyling.css">
+    <link rel="stylesheet" href="langstyling_lntt.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .region {padding: 20px; border-style: solid;}
+        .header {background-color: lightcyan;}
+        .navigation_menu {background-color: lightcyan; height: 50px;}
+        .content {background-color: lightsalmon; height: 300px;}
+        .footer {background-color: lightgray;}
+    </style>
+    <style type="text/css">
+        .bl {display: block;}
+    </style>
+    <link rel="stylesheet" href="table-style.css">
+
 </head>
 <body>
+
     <!-- Header -->
     <header class="navbar">
         <a href="index.html"><img src="logo.jpg" class="logo"></a>
@@ -62,12 +76,14 @@
     <footer>
         <div class="row">
             <div class="col">
-                <img src="logo.jpg" class="logo2">
+                <img src="logo.jfif" class="logo2">
+                <p>Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.</p>
             </div>
             <div class="col">
-                <h3 data-translate="title">Title</h3>
-                <p class="email-id"><i class="fa-regular fa-envelope"></i>chuyenxuadathanh@gmail.com</p>
-                <h4><i class="fa-solid fa-phone"></i>0917395358</h4>
+                <h3 data-translate="Liên hệ">Title</h3>
+                <p>Fanpage: Chuyện xưa Đà Thành</p>
+                <p class="email-id"><i class="fa-regular fa-envelope"></i> chuyenxuadathanh@gmail.com</p>
+                <h4><i class="fa-solid fa-phone"></i> 0917395358</h4>
             </div>
             <div class="col">
                 <h3 data-translate="links-title">Liên kết</h3>
@@ -96,5 +112,84 @@
         <div class="divide-bar"></div>
         <p class="copyright">• Copyright © 2024 • NTN - All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        // Set default language to Vietnamese (vi) on page load
+        changeLanguage('vi');
+        });
+            const translations = {
+        vi: {
+            'hero-title': 'Chuyện xưa Đà Thành',
+            'hero-description': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
+            'hero-button': 'Xem thêm',
+            'fact-title-1': 'Danh hiệu',
+            'fact-text-1': 'Một trong những “thành phố đáng sống nhất Việt Nam”.',
+            'fact-title-2': 'Biểu tượng',
+            'fact-text-2': 'Cầu Rồng - cây cầu treo dài nhất cả nước và là cây cầu thép hình rồng lớn nhất thế giới',
+            'fact-title-3': 'Lễ hội pháo hoa',
+            'fact-text-3': 'Đà nẵng là địa điểm thưởng thức lễ hội pháo hoa quốc tế DIFF hằng năm',
+            'quote': 'Tôi xin nói thực với các anh, tôi đã bỏ hai phần ba đời tôi để tìm lấy thuốc mà chữa trị cho nước nhà. Thông minh tôi tuy kém, tài trí tôi tuy hèn, nhưng trong buổi giao thời này tôi có thể dám nói rằng: cái trách nhiệm của nòi giống dân tộc Việt Nam tôi quyết không nhường cho ai cả',
+            'title': 'Title',
+            'links-title': 'Liên kết',
+            'home-link': 'Trang chủ',
+            // 'service-link': 'Dịch vụ',
+            // 'about-link': 'Về chúng tôi',
+            // 'features-link': 'Đặc điểm',
+            'newsletter-title': 'Đăng kí nhận thông báo',
+            'follow-us-title': 'Theo dõi chúng tôi tại',
+            'lntt': 'Làng nghề',
+            'skls': 'Sự kiện lịch sử',
+            'cvls': 'Cổ vật lịch sử',
+            'nvls': 'Nhân vật lịch sử',
+            'btls': 'Bảo tàng lịch sử',
+            'lhtt': 'Lễ hội truyền thống'
+        },
+        en: {
+            'hero-title': 'Chuyện xưa Đà Thành',
+            'hero-description': 'Chuyện xưa Đà Thành is a website providing historical information about Da Nang city for students and the community.',
+            'hero-button': 'Learn More',
+            'fact-title-1': 'Title',
+            'fact-text-1': 'One of the "most livable cities in Vietnam"',
+            'fact-title-2': 'Symbol',
+            'fact-text-2': 'Dragon Bridge - the longest suspension bridge in the country and the largest dragon-shaped steel bridge in the world',
+            'fact-title-3': 'fireworks festival',
+            'fact-text-3': 'Danang is the place to enjoy the annual DIFF international fireworks festival',
+            'quote': 'I tell you honestly, I have spent two-thirds of my life looking for a cure to save my country. Though I may be lacking in intelligence and talent, in this period of transition, I can say that I will not let the responsibility of the Vietnamese nation pass to anyone else.',
+            'title': 'Title',
+            'links-title': 'Links',
+            'home-link': 'Home',
+            // 'service-link': 'Service',
+            // 'about-link': 'About Us',
+            // 'features-link': 'Features',
+            'newsletter-title': 'NewsLetter',
+            'follow-us-title': 'Follow Us',
+            'lntt': 'Craft Villages',
+            'skls': 'Events',
+            'cvls': 'Artifacts',
+            'nvls': 'Figures',
+            'btls': 'Museums',
+            'lhtt': 'Festivals'
+        }
+    };
+
+    function changeLanguage(lang) {
+        document.querySelectorAll('[data-translate]').forEach(function (element) {
+            const translationKey = element.getAttribute('data-translate');
+            if (translations[lang] && translations[lang][translationKey]) {
+                element.textContent = translations[lang][translationKey];
+            }
+        });
+
+        const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
+        document.querySelector('.lang-name').textContent = langName;
+
+        // Update flag icon
+        const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
+        document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
+    }
+
+    </script>
+
 </body>
 </html>
