@@ -96,7 +96,7 @@ section.hero-image {
 }
 
 .navbar-item {
-    display: inline-grid;
+    display: block;
     height: 75px;
     line-height: 75px;
     width: 180px;
@@ -763,6 +763,10 @@ strong {
 }
 
 /* Home menu */
+
+.nav__pc {
+    display: contents;
+}
 
 .nav__bars-btn {
     width: 28px;
