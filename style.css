@@ -96,7 +96,7 @@ section.hero-image {
 }
 
 .navbar-item {
-    display: block;
+    display: inline-grid;
     height: 75px;
     line-height: 75px;
     width: 180px;
@@ -760,4 +760,84 @@ body {
 }
 strong {
     font-weight: bold; /* Ensure only <strong> content is bold */
+}
+
+/* Home menu */
+
+.nav__bars-btn {
+    width: 28px;
+    height: 28px;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    dtransition: transformall linear 0.2s
+}
+
+.nav_mobile-list {
+    display: flex;
+}
+
+.nav__mobile-item {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+.nav__mobile-close {
+    width: 28px;
+    height: 28px;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+
+}
+
+.nav_input {
+    display: none;
+}
+
+.nav_input: checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav_input: checked ~ .nav__mobile {
+    transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .nav__pc {
+        display: none;
+    }
 }
