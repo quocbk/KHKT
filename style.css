@@ -89,10 +89,11 @@ section.hero-image {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     height: 75px;
     display: flex;
-    background: var(--gradient-main);
+    background: linear-gradient(to right, #3a8bdc, #1e6fb8); /* Gradient xanh giống trong ảnh */
+    color: #fff;
 }
 
 .navbar-item {
@@ -548,7 +549,7 @@ td a {
         border-radius: 10px;
         background-color: #f9f9f9;
         width: 80%;
-        max-width: 800px;
+        max-width: 900px;
         margin: 20px auto;
         font-size: 1.1em;
         line-height: 1.6;
@@ -794,7 +795,7 @@ strong {
     background-color: #fff;
     transform: translateX(-100%);
     opacity: 0;
-    dtransition: transformall linear 0.2s
+    transition: transformall linear 0.2s
 }
 
 .nav_mobile-list {
@@ -844,4 +845,12 @@ strong {
     .nav__pc {
         display: none;
     }
+}
+
+
+
+/* Ẩn gạch chân */
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
 }
