@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Lễ hội Rước mục đồng - Chuyện xưa Đà Thành</title>
-    <link rel="stylesheet" href="langstyling_lntt.css">
+    <link rel="stylesheet" href="langstyling.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
@@ -40,11 +40,16 @@
                 <li><a href="btls.html" data-translate="btls">Bảo tàng lịch sử</a></li>
                 <li><a href="lhtt.html" data-translate="lhtt">Lễ hội truyền thống</a></li>
                 <li>
-                    <a href="#" class='more' data-translate="more">Thêm</a>
+                    <a href="#" class='more' data-translate="more">Tín ngưỡng, tôn giáo</a>
                     <ul class="sub-menu">
-                        <li> <a href="#">Nội dung 1</a> </li>
-                        <li> <a href="#">Nội dung 2</a> </li>
-                        <li> <a href="#">Nội dung 3</a> </li>
+                        <li>
+                            <a href="#">Đà Nẵng</a>
+                            <ul class="sub-menu-2">
+                                <li> <a href="#">Tín ngưỡng</a> </li>
+                                <li> <a href="#">Tôn giáo</a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Quảng Nam</a> </li>
                     </ul>
                 </li>
                 <li>
@@ -249,22 +254,22 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-	    // Set default language to Vietnamese (vi) on page load
-	    changeLanguage('vi');
-	    });
-	    const translations = {
-	    'vi': {
-	        "hero-title": "Lễ hội truyền thống",
-	        "hero-description": "",
-        	"section-title": "Lễ hội Rước mục đồng",
-        	"intro-text": "",
-	        'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
-	        'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
-	        "title": "Title",
-	        "links-title": "Liên kết",
-	        "home-link": "Trang chủ",
-	        "newsletter-title": "Đăng kí nhận thông báo",
-	        "social-media": "Theo dõi chúng tôi tại",
+        // Set default language to Vietnamese (vi) on page load
+        changeLanguage('vi');
+        });
+        const translations = {
+        'vi': {
+            "hero-title": "Lễ hội truyền thống",
+            "hero-description": "",
+            "section-title": "Lễ hội Rước mục đồng",
+            "intro-text": "",
+            'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
+            'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
+            "title": "Title",
+            "links-title": "Liên kết",
+            "home-link": "Trang chủ",
+            "newsletter-title": "Đăng kí nhận thông báo",
+            "social-media": "Theo dõi chúng tôi tại",
             'home': 'Trang chủ',
             'lntt': 'Làng nghề',
             'skls': 'Sự kiện lịch sử',
@@ -272,21 +277,21 @@
             'btls': 'Bảo tàng lịch sử',
             'lhtt': 'Lễ hội truyền thống',
             'more': 'Thêm'
-	    },
-	    'en': {
-	        "hero-title": "",
-	        "hero-description": "",
-	        
-        	"section-title": "",
-        	"intro-text": "",
-    	    "fact-text-2": '',
-	        'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
-	        'fanpage': 'Fanpage: Chuyen xua Da Thanh',
-	        "title": "Title",
-	        "links-title": "Links",
-	        "home-link": "Home",
-	        "newsletter-title": "Sign up for notifications",
-	        "social-media": "Follow Us",
+        },
+        'en': {
+            "hero-title": "",
+            "hero-description": "",
+            
+            "section-title": "",
+            "intro-text": "",
+            "fact-text-2": '',
+            'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
+            'fanpage': 'Fanpage: Chuyen xua Da Thanh',
+            "title": "Title",
+            "links-title": "Links",
+            "home-link": "Home",
+            "newsletter-title": "Sign up for notifications",
+            "social-media": "Follow Us",
             'home': 'Home',
             'lntt': 'Craft Villages',
             'skls': 'Events',
@@ -294,24 +299,24 @@
             'btls': 'Museums',
             'lhtt': 'Festivals',
             'more': "More"
-		    }
-		};
+            }
+        };
 
-		function changeLanguage(lang) {
-		    document.querySelectorAll('[data-translate]').forEach(function (element) {
-		        const translationKey = element.getAttribute('data-translate');
-		        if (translations[lang] && translations[lang][translationKey]) {
-		            element.textContent = translations[lang][translationKey];
-		        }
-		    });
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-translate]').forEach(function (element) {
+                const translationKey = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][translationKey]) {
+                    element.textContent = translations[lang][translationKey];
+                }
+            });
 
-		    const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
-		    document.querySelector('.lang-name').textContent = langName;
+            const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
+            document.querySelector('.lang-name').textContent = langName;
 
-		    // Update flag icon
-		    const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
-		    document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
-		}
+            // Update flag icon
+            const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
+            document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
+        }
     </script>
 </body>
 </html>

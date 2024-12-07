@@ -193,4 +193,23 @@
     	display: none;
     }
 
+    /* Responsive cho các làng nghề */
+    .images-and-info {
+    	display: flex;
+	    flex-direction: column;
+    }
+
+    .image-column {
+    	display: flex;
+	    flex-direction: row;
+    }
+    
+    .image-wrapper {
+    	width: 150px;
+    	height: 150px;
+    }
+
+    .info-box {
+    	width: 100%;
+    }
 }

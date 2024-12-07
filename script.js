@@ -6,3 +6,5 @@ btn.addEventListener("click", () => {
 parent.classList.toggle("active");
 input.focus();
 });
+
+// Thêm video

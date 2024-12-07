@@ -1,5 +1,4 @@
-
-  footer {
+footer {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     border: none;
@@ -62,7 +61,7 @@
       margin-bottom: 5px;
     }
     button {
-      background-color: #c7940a;
+      background-color: #335883;
       color: #ffffff;
     }
     div.social {
@@ -100,4 +99,4 @@
         grid-template-columns: 1fr;
       }
     }
-  }
+}
