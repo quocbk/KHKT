@@ -262,22 +262,22 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        // Set default language to Vietnamese (vi) on page load
-        changeLanguage('vi');
-        });
-        const translations = {
-        'vi': {
-            "hero-title": "Làng nghề truyền thống",
-            "hero-description": "Với danh hiệu “thành phố đáng sống nhất Việt Nam”, Đà Nẵng không chỉ cuốn hút du khách bởi cảnh đẹp, khí hậu trong lành, và đường sá sạch sẽ mà còn bởi những làng nghề truyền thống lâu đời được gìn giữ.",
-            "section-title": "Làng điêu khắc đá mỹ nghệ Non Nước",
-            "intro-text": "Làng điêu khắc đá mỹ nghệ Non Nước là một trong những làng nghề nổi tiếng nhất Đà Nẵng với lịch sử gần 400 năm, chuyên sản xuất và điêu khắc các sản phẩm từ đá tự nhiên tinh xảo.",
-            'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
-            'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
-            "title": "Title",
-            "links-title": "Liên kết",
-            "home-link": "Trang chủ",
-            "newsletter-title": "Đăng kí nhận thông báo",
-            "social-media": "Theo dõi chúng tôi tại",
+	    // Set default language to Vietnamese (vi) on page load
+	    changeLanguage('vi');
+	    });
+	    const translations = {
+	    'vi': {
+	        "hero-title": "Bảo tàng lịch sử",
+	        "hero-description": "",
+        	"section-title": "Nhà trưng bày Hoàng Sa",
+        	"intro-text": "",
+	        'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
+	        'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
+	        "title": "Title",
+	        "links-title": "Liên kết",
+	        "home-link": "Trang chủ",
+	        "newsletter-title": "Đăng kí nhận thông báo",
+	        "social-media": "Theo dõi chúng tôi tại",
             'home': 'Trang chủ',
             'lntt': 'Làng nghề',
             'skls': 'Sự kiện lịch sử',
@@ -285,21 +285,21 @@
             'btls': 'Bảo tàng lịch sử',
             'lhtt': 'Lễ hội truyền thống',
             'more': 'Thêm'
-        },
-        'en': {
-            "hero-title": "Traditional Crafts Villages",
-            "hero-description": "With the title of 'the most livable city in Vietnam', Da Nang attracts visitors not only for its beautiful landscapes, clean streets, and pleasant climate, but also for its centuries-old traditional craft villages.",
-            
-            "section-title": "Non Nuoc stone carving village",
-            "intro-text": "Non Nuoc stone carving village is one of the most famous craft villages in Da Nang with a history of nearly 400 years, specializing in the production and carving of sophisticated natural stone products.",
-            "fact-text-2": 'Time of Formation: Formed in the late 17th century, with a history of over 300 years.',
-            'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
-            'fanpage': 'Fanpage: Chuyen xua Da Thanh',
-            "title": "Title",
-            "links-title": "Links",
-            "home-link": "Home",
-            "newsletter-title": "Sign up for notifications",
-            "social-media": "Follow Us",
+	    },
+	    'en': {
+	        "hero-title": "",
+	        "hero-description": "",
+	        
+        	"section-title": "",
+        	"intro-text": "",
+    	    "fact-text-2": '',
+	        'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
+	        'fanpage': 'Fanpage: Chuyen xua Da Thanh',
+	        "title": "Title",
+	        "links-title": "Links",
+	        "home-link": "Home",
+	        "newsletter-title": "Sign up for notifications",
+	        "social-media": "Follow Us",
             'home': 'Home',
             'lntt': 'Craft Villages',
             'skls': 'Events',
@@ -307,24 +307,24 @@
             'btls': 'Museums',
             'lhtt': 'Festivals',
             'more': "More"
-            }
-        };
+		    }
+		};
 
-        function changeLanguage(lang) {
-            document.querySelectorAll('[data-translate]').forEach(function (element) {
-                const translationKey = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][translationKey]) {
-                    element.textContent = translations[lang][translationKey];
-                }
-            });
+		function changeLanguage(lang) {
+		    document.querySelectorAll('[data-translate]').forEach(function (element) {
+		        const translationKey = element.getAttribute('data-translate');
+		        if (translations[lang] && translations[lang][translationKey]) {
+		            element.textContent = translations[lang][translationKey];
+		        }
+		    });
 
-            const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
-            document.querySelector('.lang-name').textContent = langName;
+		    const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
+		    document.querySelector('.lang-name').textContent = langName;
 
-            // Update flag icon
-            const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
-            document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
-        }
+		    // Update flag icon
+		    const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
+		    document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
+		}
     </script>
 </body>
 </html>
