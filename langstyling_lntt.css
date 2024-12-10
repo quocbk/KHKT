@@ -31,7 +31,7 @@ section, .content-item, footer {
 section.hero-image {
     margin-top: 0;
     height: 100vh;
-    background-image: url("./damynghe0.jfif");
+    background-image: url("./damynghe2.jpg");
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -260,7 +260,6 @@ section.hero-image {
 }
 
 /* Main Content Styling */
-/* Main Content Styling */
 .main-content {
     padding: 40px 160px;
     background-color: #fff;
@@ -339,15 +338,6 @@ section.hero-image {
         grid-template-columns: 1fr; /* Stack the cards vertically on smaller screens */
     }
 }
-
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .village-cards {
-        grid-template-columns: 1fr; /* Stack the cards vertically on smaller screens */
-    }
-}
-
 
 
 /* Footer Styling */
