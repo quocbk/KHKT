@@ -212,4 +212,13 @@
     .info-box {
     	width: 100%;
     }
+
+    /* Responsive cho các nhân vật lịch sử */
+    .section-title {
+    	font-size: 1.8em;
+	    width: 200%;
+    }
+
+    .intro-text {
+    }
 }
