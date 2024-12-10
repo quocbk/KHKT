@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
-    <title>Đà mỹ nghệ Non Nước - Chuyện xưa Đà Thành</title>
+    <title>Giai đoạn từ thập niên 1920 đến năm 1945 - Chuyện xưa Đà Thành</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,7 +13,6 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="langstyling.css">
-    <link rel="stylesheet" href="00000text.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/scss/_utillities.scss">
     <link rel="stylesheet" href="/node_modules/bootstrap/scss/_navbar.scss">
     <link rel="stylesheet" href="/.Improvements/homepage/home-page.css">
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
     <style>
+        section.hero-image {background-image: url(".jpg");}
         .region {padding: 20px; border-style: solid;}
         .header {background-color: #2a73f6;}
         .navigation_menu {background-color: #2a73f6; height: 50px;}
@@ -133,49 +133,49 @@
     
     <main>
 
-        <section class="hero-image">
+    	<section class="hero-image">
             <div class="hero-content">
-                <h1 class="hero-title" data-translate="hero-title">Làng nghề truyền thống</h1>
-                <p class="hero-description" data-translate="hero-description">Với danh hiệu “thành phố đáng sống nhất Việt Nam”, Đà Nẵng không chỉ cuốn hút du khách bởi cảnh đẹp, khí hậu trong lành, và đường sá sạch sẽ mà còn bởi những làng nghề truyền thống lâu đời được gìn giữ.</p>
+                <h1 class="hero-title" data-translate="hero-title">Văn học, nghệ thuật</h1>
+                <p class="hero-description" data-translate="hero-description"></p>
             </div>
         </section>
 
         <section class="main-content">
-            <h1><h1 class="section-title" data-translate="section-title">Làng điêu khắc đá mỹ nghệ Non Nước</h1>
-            <p class="intro-text" data-translate="intro-text"><strong>Làng điêu khắc đá mỹ nghệ Non Nước </strong>là một trong những làng nghề nổi tiếng nhất Đà Nẵng với lịch sử gần 400 năm, chuyên sản xuất và điêu khắc các sản phẩm từ đá tự nhiên tinh xảo.</p>
-            
-            <div class="boxes-container">
-                <!-- Main Boxes -->
-                <div class="vertical-box">
-                    <div class="box" onclick="toggleChild('child1')">1</div>
-                    <div id="child1" class="child-info">Ô thông tin con 1</div>
+            <h1 class="section-title" data-translate="section-title">Giai đoạn từ thập niên 1920 đến năm 1945</h1>
+            <p class="intro-text" data-translate="intro-text">Sau giai đoạn chuẩn bị, văn học Việt Nam từ 1920 đến năm 1945 bước vào hành trình hiện đại hóa nhanh với sự thay đổi sâu sắc trên nhiều phương diện.</p>
 
-                    <div class="box" onclick="toggleChild('child2')">2</div>
-                    <div id="child2" class="child-info">Ô thông tin con 2</div>
+            <div class="info-boxs">
+                <ul>1. Về văn xuôi (hầu hết đều viết bằng chữ quốc ngữ)
+                    <li>- "Tây phương mỹ nhơn" của Huỳnh Thi Bảo Hòa (được in tại nhà in Bảo Tồn ở Sài Gòn)</li>
+                    <li>- Truyện ngắn đầu tay "Bóng tối và ánh sáng" của Nguyễn Văn Xuân (được giải thưởng của tạp chí Thế Giới ở Hà Nội năm 1939)</li>
+                    <li>- Các tập truyện ngắn "Gió đầu mùa" (nhà xuất bản Đời Nay ấn hành năm 1937), "Nẵng trong vườn"  (nhà xuất bản Đời Nay ấn hành năm 1938), "Sợi tóc" (nhà xuất bản Đời Nay ấn hành năm 1942), "Tùy bút Hà Nội băm sáu phố phường" (nhà xuất bản Đời Nay ấn hành năm 1943) của Thạch Lam</li>
+                </ul>
 
-                    <div class="box" onclick="toggleChild('child3')">3</div>
-                    <div id="child3" class="child-info">Ô thông tin con 3</div>
+                <ul>2. Về thơ
+                    <li>- "Nghỉ hè" của Xuân Tâm (in trong tập Lời tim non xuất bản năm 1941, đã đoạt giải nhất trong cuộc thi thơ của báo Bạn Đường năm 1941)</li>
+                </ul>
 
-                    <div class="box" onclick="toggleChild('child4')">4</div>
-                    <div id="child4" class="child-info">Ô thông tin con 4</div>
-                </div>
+
             </div>
-            <script>
-                function toggleChild(childId) {
-                    // Hide all child info boxes
-                    const childInfos = document.querySelectorAll('.child-info');
-                    childInfos.forEach(info => (info.style.display = 'none'));
-
-                    // Show the selected child info box
-                    const selectedChild = document.getElementById(childId);
-                    if (selectedChild) {
-                        selectedChild.style.display = 'block';
-                    }
-                }
-
-            </script>
+			
         </section>
+        <script>
+            function toggleChild(childId) {
+                // Get all child info boxes
+                const childInfos = document.querySelectorAll('.child-info');
 
+                // Loop through all child-info boxes
+                childInfos.forEach(info => {
+                    if (info.id === childId) {
+                        // Toggle visibility of the selected child-info box
+                        info.style.display = info.style.display === 'block' ? 'none' : 'block';
+                    } else {
+                        // Hide all other child-info boxes
+                        info.style.display = 'none';
+                    }
+                });
+            }
+        </script>
         
     </main>
 
@@ -278,22 +278,22 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        // Set default language to Vietnamese (vi) on page load
-        changeLanguage('vi');
-        });
-        const translations = {
-        'vi': {
-            "hero-title": "Làng nghề truyền thống",
-            "hero-description": "Với danh hiệu “thành phố đáng sống nhất Việt Nam”, Đà Nẵng không chỉ cuốn hút du khách bởi cảnh đẹp, khí hậu trong lành, và đường sá sạch sẽ mà còn bởi những làng nghề truyền thống lâu đời được gìn giữ.",
-            "section-title": "Làng điêu khắc đá mỹ nghệ Non Nước",
-            "intro-text": "Làng điêu khắc đá mỹ nghệ Non Nước là một trong những làng nghề nổi tiếng nhất Đà Nẵng với lịch sử gần 400 năm, chuyên sản xuất và điêu khắc các sản phẩm từ đá tự nhiên tinh xảo.",
-            'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
-            'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
-            "title": "Title",
-            "links-title": "Liên kết",
-            "home-link": "Trang chủ",
-            "newsletter-title": "Đăng kí nhận thông báo",
-            "social-media": "Theo dõi chúng tôi tại",
+	    // Set default language to Vietnamese (vi) on page load
+	    changeLanguage('vi');
+	    });
+	    const translations = {
+	    'vi': {
+	        "hero-title": "Văn hóa, nghệ thuật",
+	        "hero-description": "",
+        	"section-title": "",
+        	"intro-text": "",
+	        'gioithieu': 'Chuyện xưa Đà Thành là trang web chuyên cung cấp thông tin dữ liệu dành cho học sinh và cộng đồng về lịch sử địa phương thành phố Đà Nẵng.',
+	        'fanpage': 'Fanpage: Chuyện xưa Đà Thành',
+	        "title": "Title",
+	        "links-title": "Liên kết",
+	        "home-link": "Trang chủ",
+	        "newsletter-title": "Đăng kí nhận thông báo",
+	        "social-media": "Theo dõi chúng tôi tại",
             'home': 'Trang chủ',
             'lntt': 'Làng nghề',
             'skls': 'Sự kiện lịch sử',
@@ -301,21 +301,21 @@
             'btls': 'Bảo tàng lịch sử',
             'lhtt': 'Lễ hội truyền thống',
             'more': 'Thêm'
-        },
-        'en': {
-            "hero-title": "Traditional Crafts Villages",
-            "hero-description": "With the title of 'the most livable city in Vietnam', Da Nang attracts visitors not only for its beautiful landscapes, clean streets, and pleasant climate, but also for its centuries-old traditional craft villages.",
-            
-            "section-title": "Non Nuoc stone carving village",
-            "intro-text": "Non Nuoc stone carving village is one of the most famous craft villages in Da Nang with a history of nearly 400 years, specializing in the production and carving of sophisticated natural stone products.",
-            "fact-text-2": 'Time of Formation: Formed in the late 17th century, with a history of over 300 years.',
-            'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
-            'fanpage': 'Fanpage: Chuyen xua Da Thanh',
-            "title": "Title",
-            "links-title": "Links",
-            "home-link": "Home",
-            "newsletter-title": "Sign up for notifications",
-            "social-media": "Follow Us",
+	    },
+	    'en': {
+	        "hero-title": "",
+	        "hero-description": "",
+	        
+        	"section-title": "",
+        	"intro-text": "",
+    	    "fact-text-2": '',
+	        'gioithieu': 'Da Thanh Old Stories is a website specializing in providing data information for students and the community about the local history of Da Nang city.',
+	        'fanpage': 'Fanpage: Chuyen xua Da Thanh',
+	        "title": "Title",
+	        "links-title": "Links",
+	        "home-link": "Home",
+	        "newsletter-title": "Sign up for notifications",
+	        "social-media": "Follow Us",
             'home': 'Home',
             'lntt': 'Craft Villages',
             'skls': 'Events',
@@ -323,24 +323,24 @@
             'btls': 'Museums',
             'lhtt': 'Festivals',
             'more': "More"
-            }
-        };
+		    }
+		};
 
-        function changeLanguage(lang) {
-            document.querySelectorAll('[data-translate]').forEach(function (element) {
-                const translationKey = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][translationKey]) {
-                    element.textContent = translations[lang][translationKey];
-                }
-            });
+		function changeLanguage(lang) {
+		    document.querySelectorAll('[data-translate]').forEach(function (element) {
+		        const translationKey = element.getAttribute('data-translate');
+		        if (translations[lang] && translations[lang][translationKey]) {
+		            element.textContent = translations[lang][translationKey];
+		        }
+		    });
 
-            const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
-            document.querySelector('.lang-name').textContent = langName;
+		    const langName = lang === 'vi' ? 'Việt Nam' : 'English'; // Language name based on selected language
+		    document.querySelector('.lang-name').textContent = langName;
 
-            // Update flag icon
-            const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
-            document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
-        }
+		    // Update flag icon
+		    const flagUrl = lang === 'vi' ? 'https://flagsapi.com/VN/flat/64.png' : 'https://flagsapi.com/GB/flat/64.png';
+		    document.querySelector('.lang-flag').style.backgroundImage = `url(${flagUrl})`; // Set flag image
+		}
     </script>
 </body>
 <script src="/header/header.js"></script>
