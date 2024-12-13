@@ -13,7 +13,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Be Vietnam Pro";
+    font-family: "Candara";
     position: relative;
     min-height: 100vh;
     background-color: #FAF6E3;
@@ -440,7 +440,6 @@ footer {
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ffffff;
     margin: 20px 0;
 }
 

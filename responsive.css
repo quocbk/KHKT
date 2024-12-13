@@ -12,7 +12,6 @@
         background: rgba(0, 0, 0, 0.2);
         padding: 90px;
         border-radius: 8px;
-        margin-top: 500px;
     }
     .hero-title {
         font-size: 3em;
@@ -95,7 +94,7 @@
         transform: scale(1.05);
     }
 
-    /* 5 ý chính */
+    /* 4 ý chính */
     
     .fun-facts {
 	    display: flex;
@@ -104,7 +103,7 @@
 	    flex-direction: column;
 	    align-items: center;
 	}
-    .fact {    
+	.fact {    
     	font-size: 18px;
 	    width: 80%;
 	    white-space: normal;
@@ -157,9 +156,6 @@
 	    word-wrap: break-word; 
 	    box-sizing: border-box;
     }
-    .content-item {
-        width: 320px;
-    }
     .content-item img {
         width: 300px;
         height: auto;
@@ -172,7 +168,6 @@
         padding: 12px 25px;
         /* width: 100%; */
         margin-bottom: 0;
-        background: var(--gradient-main);
         color: #fff;
         line-height: 20px;
         font-size: 10px;
