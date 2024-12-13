@@ -205,7 +205,26 @@
     }
 
     .info-box {
-    	width: 100%;
+    	width: 80%;
+    }
+
+    /* Làng nghề truyền thống */
+    .village-card {
+    	display: contents;
+    	width: 40%;
+    }
+
+    .intro-text {
+        width: 360px;
+        height: 100px;
+    }
+
+    .village-cards {
+        grid-template-columns: max-content;
+    }
+
+    .image-wrapper {
+    	width: 110px;
     }
 
     /* Responsive cho các nhân vật lịch sử */
@@ -214,6 +233,15 @@
 	    width: 200%;
     }
 
-    .intro-text {
+    /* Video đầu trang */
+    ./*hero-image {
+    	height: 400px;
+    	width: 630px;
+    }*/
+
+    /*link youtube*/
+    .vid {
+    	width: 40em;
+    	height: auto;
     }
 }

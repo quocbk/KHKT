@@ -31,6 +31,8 @@ section, .content-item, footer {
 section.hero-image {
     margin-top: 0;
     height: 100vh;
+    /*height: 1000px;
+    width: 1479px;*/
     background-size: cover;
     overflow: hidden;
     position: relative;
