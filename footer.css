@@ -26,7 +26,7 @@ footer {
     h3 {
       width: 100%;
       text-align: left;
-      color: black;
+      color: white;
       font-size: 1.4em;
       white-space: nowrap;
     }
@@ -39,17 +39,17 @@ footer {
     }
     li:not(:first-child) {
       margin-top: 0.8em;
-      color: black;
+      color: white;
     }
     ul li a {
-      color: black;
+      color: white;
       text-decoration: none;
     }
     ul li a:hover {
       color: #2a8ded;
     }
     .about p {
-      color: black;
+      color: white;
       text-align: justify;
       line-height: 2;
       margin: 0;
