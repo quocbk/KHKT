@@ -23,7 +23,7 @@ body {
 
 /* Section */
 section, .content-item, footer {
-    display: block;
+    display: flex;
     padding: 0 160px;
     margin: 48px 0;
 }
@@ -44,11 +44,10 @@ section.hero-image {
 /* Content within Hero Section */
 .hero-content {
     max-width: 600px;
-    text-align: left;
-    background: rgba(0, 0, 0, 0.2); /* Optional: Adds contrast with a semi-transparent background */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds contrast with a semi-transparent background */
     padding: 20px;
     border-radius: 8px;
-    margin-top: 250px;
 }
 
 /* Title Styling */
@@ -124,7 +123,7 @@ section.hero-image {
     margin-left: 32px;
     height: 90px; /* Matches navbar height */
     box-sizing: border-box;
-    margin-right:32px;
+    margin-right:3px;
     border: none;
 }
 
@@ -260,6 +259,7 @@ section.hero-image {
 
 /* Main Content Styling */
 .main-content {
+    display:;
     padding: 40px 150px;
     background-color: #fff;
     margin: 50px 80px;
@@ -369,7 +369,6 @@ footer {
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ffffff;
     margin: 20px 0;
 }
 

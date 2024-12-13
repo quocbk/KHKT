@@ -3,7 +3,7 @@ footer {
     box-sizing: border-box;
     border: none;
     outline: none;
-    background-color: #121315;
+    background-color: rgb(13, 110, 253);
     color: #a7a7a7;
     font-size: 16px;
 
@@ -26,7 +26,7 @@ footer {
     h3 {
       width: 100%;
       text-align: left;
-      color: white;
+      color: black;
       font-size: 1.4em;
       white-space: nowrap;
     }
@@ -39,15 +39,17 @@ footer {
     }
     li:not(:first-child) {
       margin-top: 0.8em;
+      color: black;
     }
     ul li a {
-      color: #a7a7a7;
+      color: black;
       text-decoration: none;
     }
     ul li a:hover {
       color: #2a8ded;
     }
     .about p {
+      color: black;
       text-align: justify;
       line-height: 2;
       margin: 0;
@@ -56,7 +58,7 @@ footer {
     button {
       font-size: 1em;
       padding: 1em;
-      width: 70%;
+      width: 90%;
       border-radius: 5px;
       margin-bottom: 5px;
     }
